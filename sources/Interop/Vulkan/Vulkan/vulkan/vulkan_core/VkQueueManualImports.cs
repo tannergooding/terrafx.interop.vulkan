@@ -9,8 +9,6 @@ public unsafe partial struct VkQueueManualImports
 {
     public delegate* unmanaged<VkQueue, uint, VkSubmitInfo2*, VkFence, VkResult> vkQueueSubmit2KHR;
 
-    public delegate* unmanaged<VkQueue, uint*, VkCheckpointData2NV*, void> vkGetQueueCheckpointData2NV;
-
     public delegate* unmanaged<VkQueue, VkDebugUtilsLabelEXT*, void> vkQueueBeginDebugUtilsLabelEXT;
 
     public delegate* unmanaged<VkQueue, void> vkQueueEndDebugUtilsLabelEXT;
@@ -19,5 +17,9 @@ public unsafe partial struct VkQueueManualImports
 
     public delegate* unmanaged<VkQueue, uint*, VkCheckpointDataNV*, void> vkGetQueueCheckpointDataNV;
 
+    public delegate* unmanaged<VkQueue, uint*, VkCheckpointData2NV*, void> vkGetQueueCheckpointData2NV;
+
     public delegate* unmanaged<VkQueue, VkPerformanceConfigurationINTEL, VkResult> vkQueueSetPerformanceConfigurationINTEL;
+
+    public delegate* unmanaged<VkQueue, VkOutOfBandQueueTypeInfoNV*, void> vkQueueNotifyOutOfBandNV;
 }

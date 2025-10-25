@@ -7,6 +7,7 @@ namespace TerraFX.Interop.Vulkan;
 
 public enum VkVendorId
 {
+    VK_VENDOR_ID_KHRONOS = 0x10000,
     VK_VENDOR_ID_VIV = 0x10001,
     VK_VENDOR_ID_VSI = 0x10002,
     VK_VENDOR_ID_KAZAN = 0x10003,

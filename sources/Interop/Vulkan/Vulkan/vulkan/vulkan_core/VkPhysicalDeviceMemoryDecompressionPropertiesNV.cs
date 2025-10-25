@@ -11,8 +11,7 @@ public unsafe partial struct VkPhysicalDeviceMemoryDecompressionPropertiesNV
 
     public void* pNext;
 
-    [NativeTypeName("VkMemoryDecompressionMethodFlagsNV")]
-    public ulong decompressionMethods;
+    public VkMemoryDecompressionMethodFlagsNV decompressionMethods;
 
     [NativeTypeName("uint64_t")]
     public ulong maxDecompressionIndirectCount;

@@ -8,4 +8,8 @@ namespace TerraFX.Interop.Vulkan;
 public unsafe partial struct VkDeviceManualImports
 {
     public delegate* unmanaged<VkDevice, VkExportMetalObjectsInfoEXT*, void> vkExportMetalObjectsEXT;
+
+    public delegate* unmanaged<VkDevice, VkMemoryGetMetalHandleInfoEXT*, void**, VkResult> vkGetMemoryMetalHandleEXT;
+
+    public delegate* unmanaged<VkDevice, VkExternalMemoryHandleTypeFlags, void*, VkMemoryMetalHandlePropertiesEXT*, VkResult> vkGetMemoryMetalHandlePropertiesEXT;
 }

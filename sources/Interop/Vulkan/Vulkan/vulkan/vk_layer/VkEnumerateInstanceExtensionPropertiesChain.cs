@@ -15,7 +15,7 @@ public unsafe partial struct VkEnumerateInstanceExtensionPropertiesChain
     [NativeTypeName("const struct VkEnumerateInstanceExtensionPropertiesChain *")]
     public VkEnumerateInstanceExtensionPropertiesChain* pNextLink;
 
-    public VkResult CallDown([NativeTypeName("const char *")] sbyte* pLayerName, [NativeTypeName("uint32_t *")] uint* pPropertyCount, VkExtensionProperties* pProperties)
+    public readonly VkResult CallDown([NativeTypeName("const char *")] sbyte* pLayerName, [NativeTypeName("uint32_t *")] uint* pPropertyCount, VkExtensionProperties* pProperties)
     {
         return pfnNextLayer(pNextLink, pLayerName, pPropertyCount, pProperties);
     }

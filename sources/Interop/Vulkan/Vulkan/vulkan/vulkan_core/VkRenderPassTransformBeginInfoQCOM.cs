@@ -9,6 +9,7 @@ public unsafe partial struct VkRenderPassTransformBeginInfoQCOM
 {
     public VkStructureType sType;
 
+    [NativeTypeName("const void *")]
     public void* pNext;
 
     [NativeTypeName("VkSurfaceTransformFlagBitsKHR")]

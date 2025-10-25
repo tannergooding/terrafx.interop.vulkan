@@ -16,8 +16,7 @@ public static unsafe partial class ResolveDllImportTests
 {
     /// <summary>Validates that thhe <see cref="DllImportAttribute" /> attributed methods can be resolved.</summary>
     [Test]
-    [Platform("Linux")]
-    [Platform("Win32")]
+    [Platform("Linux,Win32")]
     public static void ResolveDllImportTest()
     {
         Assert.Multiple(() => {
@@ -58,8 +57,6 @@ public static unsafe partial class ResolveDllImportTests
             {
                 Assert.Fail($"Fail: {exception.Message}");
             }
-
-            throw;
         }
     }
 #pragma warning restore CA1031 // Do not catch general exception types

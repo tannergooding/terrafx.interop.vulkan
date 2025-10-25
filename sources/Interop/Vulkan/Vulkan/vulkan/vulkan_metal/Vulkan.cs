@@ -21,9 +21,18 @@ public static partial class Vulkan
     [NativeTypeName("#define VK_EXT_metal_objects 1")]
     public const int VK_EXT_metal_objects = 1;
 
-    [NativeTypeName("#define VK_EXT_METAL_OBJECTS_SPEC_VERSION 1")]
-    public const int VK_EXT_METAL_OBJECTS_SPEC_VERSION = 1;
+    [NativeTypeName("#define VK_EXT_METAL_OBJECTS_SPEC_VERSION 2")]
+    public const int VK_EXT_METAL_OBJECTS_SPEC_VERSION = 2;
 
     [NativeTypeName("#define VK_EXT_METAL_OBJECTS_EXTENSION_NAME \"VK_EXT_metal_objects\"")]
     public static ReadOnlySpan<byte> VK_EXT_METAL_OBJECTS_EXTENSION_NAME => "VK_EXT_metal_objects"u8;
+
+    [NativeTypeName("#define VK_EXT_external_memory_metal 1")]
+    public const int VK_EXT_external_memory_metal = 1;
+
+    [NativeTypeName("#define VK_EXT_EXTERNAL_MEMORY_METAL_SPEC_VERSION 1")]
+    public const int VK_EXT_EXTERNAL_MEMORY_METAL_SPEC_VERSION = 1;
+
+    [NativeTypeName("#define VK_EXT_EXTERNAL_MEMORY_METAL_EXTENSION_NAME \"VK_EXT_external_memory_metal\"")]
+    public static ReadOnlySpan<byte> VK_EXT_EXTERNAL_MEMORY_METAL_EXTENSION_NAME => "VK_EXT_external_memory_metal"u8;
 }

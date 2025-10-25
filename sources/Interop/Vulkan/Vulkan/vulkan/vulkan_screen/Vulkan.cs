@@ -4,15 +4,11 @@
 // Original source is Copyright © 2015-2025 The Khronos Group Inc. Licensed under the Apache License v2.0 (Apache-2.0)
 
 using System;
-using System.Runtime.InteropServices;
 
 namespace TerraFX.Interop.Vulkan;
 
-public static unsafe partial class Vulkan
+public static partial class Vulkan
 {
-    [DllImport("vulkan", ExactSpelling = true)]
-    public static extern VkResult vkGetScreenBufferPropertiesQNX(VkDevice device, [NativeTypeName("const struct _screen_buffer *")] void* buffer, VkScreenBufferPropertiesQNX* pProperties);
-
     [NativeTypeName("#define VK_QNX_screen_surface 1")]
     public const int VK_QNX_screen_surface = 1;
 

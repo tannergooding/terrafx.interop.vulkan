@@ -9,6 +9,7 @@ public unsafe partial struct VkDescriptorBufferBindingPushDescriptorBufferHandle
 {
     public VkStructureType sType;
 
+    [NativeTypeName("const void *")]
     public void* pNext;
 
     public VkBuffer buffer;

@@ -21,6 +21,6 @@ public static partial class Vulkan
     [NativeTypeName("#define VK_STD_VULKAN_VIDEO_CODEC_H265_DECODE_EXTENSION_NAME \"VK_STD_vulkan_video_codec_h265_decode\"")]
     public static ReadOnlySpan<byte> VK_STD_VULKAN_VIDEO_CODEC_H265_DECODE_EXTENSION_NAME => "VK_STD_vulkan_video_codec_h265_decode"u8;
 
-    [NativeTypeName("#define STD_VIDEO_DECODE_H265_REF_PIC_SET_LIST_SIZE 8")]
-    public const int STD_VIDEO_DECODE_H265_REF_PIC_SET_LIST_SIZE = 8;
+    [NativeTypeName("#define STD_VIDEO_DECODE_H265_REF_PIC_SET_LIST_SIZE 8U")]
+    public const uint STD_VIDEO_DECODE_H265_REF_PIC_SET_LIST_SIZE = 8U;
 }

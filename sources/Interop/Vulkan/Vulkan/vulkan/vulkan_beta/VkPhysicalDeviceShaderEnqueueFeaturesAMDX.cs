@@ -13,4 +13,7 @@ public unsafe partial struct VkPhysicalDeviceShaderEnqueueFeaturesAMDX
 
     [NativeTypeName("VkBool32")]
     public uint shaderEnqueue;
+
+    [NativeTypeName("VkBool32")]
+    public uint shaderMeshEnqueue;
 }

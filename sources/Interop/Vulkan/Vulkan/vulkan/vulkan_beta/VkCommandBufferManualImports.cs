@@ -7,5 +7,13 @@ namespace TerraFX.Interop.Vulkan;
 
 public unsafe partial struct VkCommandBufferManualImports
 {
-    public delegate* unmanaged<VkCommandBuffer, VkVideoEncodeInfoKHR*, void> vkCmdEncodeVideoKHR;
+    public delegate* unmanaged<VkCommandBuffer, VkPipeline, ulong, ulong, void> vkCmdInitializeGraphScratchMemoryAMDX;
+
+    public delegate* unmanaged<VkCommandBuffer, ulong, ulong, VkDispatchGraphCountInfoAMDX*, void> vkCmdDispatchGraphAMDX;
+
+    public delegate* unmanaged<VkCommandBuffer, ulong, ulong, VkDispatchGraphCountInfoAMDX*, void> vkCmdDispatchGraphIndirectAMDX;
+
+    public delegate* unmanaged<VkCommandBuffer, ulong, ulong, ulong, void> vkCmdDispatchGraphIndirectCountAMDX;
+
+    public delegate* unmanaged<VkCommandBuffer, VkCudaLaunchInfoNV*, void> vkCmdCudaLaunchKernelNV;
 }

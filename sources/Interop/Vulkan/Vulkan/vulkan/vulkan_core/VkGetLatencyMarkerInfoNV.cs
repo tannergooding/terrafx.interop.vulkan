@@ -12,5 +12,8 @@ public unsafe partial struct VkGetLatencyMarkerInfoNV
     [NativeTypeName("const void *")]
     public void* pNext;
 
+    [NativeTypeName("uint32_t")]
+    public uint timingCount;
+
     public VkLatencyTimingsFrameReportNV* pTimings;
 }

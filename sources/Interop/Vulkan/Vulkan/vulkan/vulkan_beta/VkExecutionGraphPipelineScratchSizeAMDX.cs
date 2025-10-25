@@ -12,5 +12,11 @@ public unsafe partial struct VkExecutionGraphPipelineScratchSizeAMDX
     public void* pNext;
 
     [NativeTypeName("VkDeviceSize")]
-    public ulong size;
+    public ulong minSize;
+
+    [NativeTypeName("VkDeviceSize")]
+    public ulong maxSize;
+
+    [NativeTypeName("VkDeviceSize")]
+    public ulong sizeGranularity;
 }

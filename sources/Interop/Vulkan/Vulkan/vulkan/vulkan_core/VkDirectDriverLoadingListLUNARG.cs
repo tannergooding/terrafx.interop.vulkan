@@ -9,6 +9,7 @@ public unsafe partial struct VkDirectDriverLoadingListLUNARG
 {
     public VkStructureType sType;
 
+    [NativeTypeName("const void *")]
     public void* pNext;
 
     public VkDirectDriverLoadingModeLUNARG mode;
